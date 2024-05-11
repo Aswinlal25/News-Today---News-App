@@ -168,7 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               ),
                                             ),
                                             Text(
-                                              "Reported by : ${author}" ?? '',
+                                              "Reported by : ${author}",
                                               style: const TextStyle(
                                                 fontSize: 15,
                                                 color: Colors.white54,

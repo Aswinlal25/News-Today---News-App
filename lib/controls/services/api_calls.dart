@@ -2,16 +2,15 @@
 
 import 'dart:convert';
 import 'dart:developer';
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:my_diary/models/news_model/news_model/source.dart';
 import 'package:my_diary/models/top_news_models/article.dart';
 
 class NewsApi {
   final baseUrl1 =
-      "https://newsapi.org/v2/top-headlines/sources?country=us&apiKey=d35ad37eb75143a895adef21b83d2d51";
+      "https://newsapi.org/v2/top-headlines/sources?country=us&apiKey=";
   final baseUrl2 =
-      "https://newsapi.org/v2/top-headlines?country=in&pageSize=100&apiKey=d35ad37eb75143a895adef21b83d2d51";
+      "https://newsapi.org/v2/top-headlines?country=in&pageSize=100&apiKey=";
 
   Future<List<Source>> getNews() async {
     try {
